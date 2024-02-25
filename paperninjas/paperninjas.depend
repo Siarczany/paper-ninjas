@@ -1,0 +1,52 @@
+# depslib dependency file v1.0
+1708859962 source:c:\users\administrator\desktop\programowanie jakies\paperninja\paperninjas\character.cpp
+	"character.h"
+	<random>
+	<iostream>
+
+1708859185 c:\users\administrator\desktop\programowanie jakies\paperninja\paperninjas\character.h
+	"stats.h"
+	"armour.h"
+	<vector>
+	<string>
+
+1708860007 source:c:\users\administrator\desktop\programowanie jakies\paperninja\paperninjas\main.cpp
+	<iostream>
+	<ctime>
+	"character.h"
+	"attack.h"
+
+1708850244 source:c:\users\administrator\desktop\programowanie jakies\paperninja\paperninjas\attack.cpp
+	"attack.h"
+	"character.h"
+	<iostream>
+
+1708804471 c:\users\administrator\desktop\programowanie jakies\paperninja\paperninjas\attack.h
+	<string>
+	<random>
+
+1708690703 source:c:\users\administrator\desktop\programowanie jakies\paperninja\paperninjas\team.cpp
+	"team.h"
+
+1708691583 c:\users\administrator\desktop\programowanie jakies\paperninja\paperninjas\team.h
+
+1708691606 source:c:\users\administrator\desktop\programowanie jakies\paperninja\paperninjas\battle.cpp
+	"battle.h"
+
+1708691616 c:\users\administrator\desktop\programowanie jakies\paperninja\paperninjas\battle.h
+	<string>
+
+1708769434 source:c:\users\administrator\desktop\programowanie jakies\paperninja\paperninjas\effects.cpp
+
+1708849422 source:c:\users\administrator\desktop\programowanie jakies\paperninja\paperninjas\armour.cpp
+	"armour.h"
+
+1708858749 c:\users\administrator\desktop\programowanie jakies\paperninja\paperninjas\armour.h
+	"stats.h"
+	<string>
+
+1708849960 source:c:\users\administrator\desktop\programowanie jakies\paperninja\paperninjas\stats.cpp
+	"stats.h"
+
+1708858221 c:\users\administrator\desktop\programowanie jakies\paperninja\paperninjas\stats.h
+
