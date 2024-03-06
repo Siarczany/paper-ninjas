@@ -39,6 +39,8 @@ int main()
 
     a.add_armour_test();
 
+    std::cout << RAND_MAX;
+
     /*
     std::cout << "postac a hp: " << a.get_hp() << "/" << a.get_max_hp() << "\n";
     std::cout << "postac b hp: " << b.get_hp() << "/" << b.get_max_hp() << "\n";

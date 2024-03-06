@@ -1,16 +1,16 @@
 # depslib dependency file v1.0
-1708859962 source:c:\users\administrator\desktop\programowanie jakies\paperninja\paperninjas\character.cpp
+1709729632 source:c:\users\administrator\desktop\programowanie jakies\paperninja\paperninjas\character.cpp
 	"character.h"
 	<random>
 	<iostream>
 
-1708859185 c:\users\administrator\desktop\programowanie jakies\paperninja\paperninjas\character.h
+1709742624 c:\users\administrator\desktop\programowanie jakies\paperninja\paperninjas\character.h
 	"stats.h"
 	"armour.h"
 	<vector>
 	<string>
 
-1708860007 source:c:\users\administrator\desktop\programowanie jakies\paperninja\paperninjas\main.cpp
+1709739495 source:c:\users\administrator\desktop\programowanie jakies\paperninja\paperninjas\main.cpp
 	<iostream>
 	<ctime>
 	"character.h"
@@ -21,7 +21,7 @@
 	"character.h"
 	<iostream>
 
-1708804471 c:\users\administrator\desktop\programowanie jakies\paperninja\paperninjas\attack.h
+1709726081 c:\users\administrator\desktop\programowanie jakies\paperninja\paperninjas\attack.h
 	<string>
 	<random>
 
@@ -41,7 +41,7 @@
 1708849422 source:c:\users\administrator\desktop\programowanie jakies\paperninja\paperninjas\armour.cpp
 	"armour.h"
 
-1708858749 c:\users\administrator\desktop\programowanie jakies\paperninja\paperninjas\armour.h
+1709740716 c:\users\administrator\desktop\programowanie jakies\paperninja\paperninjas\armour.h
 	"stats.h"
 	<string>
 

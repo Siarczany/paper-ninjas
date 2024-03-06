@@ -2,7 +2,7 @@
 Not done
 
  create a destructor for vector of references - it uses references to already existing objects therefore destructors aren't needed but we have to make sure to not use the skill when it was killed because undefined behaviour
-organize attack.h i character.h też można
+ organize attack.h i character.h też można
 integrate a roll before attacking - requires characters to have stats or something because they would be influencing the % I think
  make a recursive delete for next_attack*     - 3 lines above is the explanation
 make generating chance and dmg into a single function as well as setting them into singular one as well
@@ -11,4 +11,7 @@ Rename functions for setting which distributions is used because as in the line 
 chance dmg for some formula perhaps idk. How would we do custom formulas???
 get max stats for a character should go through all equipment and add their stats
  make custimizable number or equipable eq
-do a github xd
+ do a github xd
+ think up some solution for removing the equipment because removing it by array index is kinda... and removing it by address means that we store the piece in the character and in the memory... and pointers would allow for multiple characters to equip the same piece
+write a generic function that would return a sum of a certain stat from all the pieces of equipment
+

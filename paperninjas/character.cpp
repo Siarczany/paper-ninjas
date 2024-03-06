@@ -42,6 +42,25 @@ void character::set_max_konda(int max_konda_points)
     stat.konda = max_konda_points;
 }
 
+void character::set_knowledge(int knowledge)
+{
+    stat.knowledge = knowledge;
+}
+
+void character::set_power(int power)
+{
+    stat.power = power;
+}
+void character::set_strength(int strength)
+{
+    stat.strength = strength;
+}
+void character::set_agility(int agility)
+{
+    stat.agility = agility;
+}
+
+
 int character::get_hp()
 {
     return hp;
@@ -71,6 +90,26 @@ int character::get_max_konda()
 {
     return stat.konda;
 }
+
+int character::get_knowledge()
+{
+    return stat.knowledge;
+}
+int character::get_power()
+{
+    return stat.power;
+}
+int character::get_strength()
+{
+    return stat.strength;
+}
+int character::get_agility()
+{
+    return stat.agility;
+}
+
+
+
 
 void character::update_alive_status()
 {
@@ -143,48 +182,52 @@ void character::add_armour(armour &piece)
 {
     // if none of the type are equipped than equip
     // if the type is equipped then check how much can be
-    bool is_type_equipped = false;
+
+    //
+    // how many of the same type is already equipped
+    //
+
     int type_equipped = 0;
-    bool can_be_equipped = true;
 
     for(int i = 0; i<(int)eq.size(); i++)
     {
-        if(eq[i].type == piece.type)
+        if(eq[i]->type == piece.type)
         {
-            is_type_equipped = true;
             type_equipped++;
         }
     }
 
-    if(is_type_equipped)
+    int max_number_equipabble = 1;
+
+    for(int i = 0; i<(int)max_eq.size(); i++)
     {
-        int max_number_equipabble = 1;
-
-        for(int i = 0; i<(int)max_eq.size(); i++)
+        if(max_eq[i].type == piece.type)
         {
-            if(max_eq[i].type == piece.type)
-            {
-                max_number_equipabble = max_eq[i].max_number;
-            }
-        }
-
-        if(max_number_equipabble <= type_equipped)
-        {
-            //eq.push_back(piece);
-            can_be_equipped = false;
+            max_number_equipabble = max_eq[i].max_number;
         }
     }
-    if(can_be_equipped)
+
+    if(max_number_equipabble <= type_equipped)
     {
-        eq.push_back(piece);
+        //eq.push_back(piece);
+        //can_be_equipped = false;
+        return;
     }
+
+    if(piece.the_equipped_one != nullptr)
+    {
+        return;
+    }
+
+    piece.the_equipped_one = this;
+    eq.push_back(&piece);
 }
 
 void character::add_armour_test()
 {
     for(int i = 0; i<(int)eq.size(); i++)
     {
-        std::cout << eq[i].type << " " << eq[i].name << "\n";
+        std::cout << eq[i]->type << " " << eq[i]->name << "\n";
     }
     std::cout << "\n\n";
 }

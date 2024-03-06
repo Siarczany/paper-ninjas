@@ -30,17 +30,18 @@ private:
 
     bool is_this(std::string attack_name); // maybe usefull in the future idk
 public:
-    void set_name(std::string attack_name);
-    void set_chance(double percentage);
-    void set_dmg_przelicznik(double przelicznik);
-    void set_random_generator(std::default_random_engine* generator);
-    void set_next_attack(attack* att);
-    void set_dmg_distribution(std::string dist);
-    void set_chance_distribution(std::string dist);
+    void set_name(std::string attack_name);       //
+    void set_chance(double percentage);           // set attack stats
+    void set_dmg_przelicznik(double przelicznik); //
 
-    void set_chance_distributions(std::normal_distribution<double>* normal = nullptr, std::uniform_real_distribution<double>* uniform = nullptr);
-    void set_dmg_distributions(std::normal_distribution<double>* normal = nullptr, std::uniform_real_distribution<double>* uniform = nullptr);
+    void set_random_generator(std::default_random_engine* generator);                                                                             //
+    void set_dmg_distribution(std::string dist);                                                                                                  //
+    void set_chance_distribution(std::string dist);                                                                                               // settings for rng in the attack
+    void set_chance_distributions(std::normal_distribution<double>* normal = nullptr, std::uniform_real_distribution<double>* uniform = nullptr); //
+    void set_dmg_distributions(std::normal_distribution<double>* normal = nullptr, std::uniform_real_distribution<double>* uniform = nullptr);    //
 
-    void hit(character& attacker, character& victim);
+    void set_next_attack(attack* att); // if we want to chain attacks but I kinda decided that this class is for dealing damage only so kinda redundant I think
+
+    void hit(character& attacker, character& victim); // function that deals damage
 
 };
